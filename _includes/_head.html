@@ -1,5 +1,5 @@
-<!doctype html> 
-<html lang="en"> 
+<!doctype html>
+<html lang="es" prefix="og: http://ogp.me">
 <head>
   <meta charset="utf-8">
   <title>{{site.name}}</title>
@@ -7,10 +7,27 @@
   <meta name="description" content="{{site.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="{{ site.url }}/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/apple-touch-icon.png" />
+  <link rel="icon" href="/avatar.png" />
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" />
   
-  <link rel="stylesheet" href="{{ site.url }}/style.css" />
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="alternate" type="application/atom+xml"
+        title="{{ site.name }} - {{ site.description }}" href="/atom.xml">
+
+  <meta property="og:locale" content="es_AR"/>
+  <meta property="og:site_name" content="{{ site.name }}"/>
+  <meta property="og:image" content="{{ site.url }}/avatar.png"/>
+  {% if post %}
+    <meta property="og:title" content="{{ post.title }}"/>
+    <meta property="og:url" content="{{ site.url }}/{{ post.url }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:article:published_time" content="{{ post.date }}"/>
+    <meta property="og:article:author" content="{{ post.author }}"/>
+  {% else %}
+    <meta property="og:title" content="{{ site.name }} - {{ site.description }}"/>
+    <meta property="og:url" content="{{ site.url }}/"/>
+  {% endif %}
 </head>
 <body>

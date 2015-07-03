@@ -66,3 +66,7 @@ h1 a { color: #333;}
 .fr { float: right; }
 
 .gray { color: #999; }
+
+.avatar { border-radius: 50%; vertical-align: middle; }
+
+footer p { margin-bottom: 0 }

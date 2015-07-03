@@ -1,10 +1,14 @@
-name: "Heather"
-description: "A Hyperminimal Jekyll Theme"
-author: "Jxnblk"
+name: "fauno"
+description: "un coso para bajar línea"
+author: "fauno"
+email: "fauno@endefensadelsl.org"
 
-# url: "http://localhost:4000"
-url: "http://jxnblk.github.io/Heather"
+url: "http://fauno.endefensadelsl.org"
+license: "http://endefensadelsl.org/ppl_deed_es.html"
 
 exclude: [README.md, Rakefile]
 paginate: 16
 permalink: /:title
+
+destination: /srv/http/fauno.endefensadelsl.org
+lsi: false
