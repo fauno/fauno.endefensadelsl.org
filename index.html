@@ -3,9 +3,14 @@ layout: default
 ---
 
 {% for post in site.posts %}
-<article class="post">
-  <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
-  {{ post.excerpt }}
-  <a href="{{ post.url }}" title="{{ post.title }}">&hellip;</a>
-</article>
+  {% if forloop.first %}
+    <article class="post">
+      <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+      {{ post.content }}
+    </article>
+
+    <h2>Artículos anteriores</h2>
+  {% else %}
+    <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+  {% endif %}
 {% endfor %}
