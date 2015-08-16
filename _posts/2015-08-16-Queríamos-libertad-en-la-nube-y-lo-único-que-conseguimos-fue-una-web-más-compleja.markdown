@@ -1,5 +1,5 @@
 ---
-title: "Queríamos libertad en la nube y lo único que conseguimos fue la web distribuida"
+title: "Queríamos libertad en la nube y lo único que conseguimos fue una web más compleja"
 author: fauno
 layout: post
 ---
