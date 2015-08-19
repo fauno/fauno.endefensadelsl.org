@@ -1,5 +1,5 @@
 ---
-title: "acerca"
+title: Acerca
 author: fauno
 layout: post
 ---

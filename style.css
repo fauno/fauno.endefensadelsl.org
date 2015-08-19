@@ -70,3 +70,13 @@ h1 a { color: #333;}
 .avatar { border-radius: 50%; vertical-align: middle; }
 
 footer p { margin-bottom: 0 }
+
+nav li {
+  display: inline;
+  padding: 5px;
+  float: right;
+}
+
+nav {
+  margin-bottom: 40px;
+}

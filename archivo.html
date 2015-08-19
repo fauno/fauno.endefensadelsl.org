@@ -1,0 +1,14 @@
+---
+layout: default
+title: archivo
+---
+
+<h1>Todos los artículos</h1>
+<ul>
+{% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+    <p class="small gray"><time datetime="{{ post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%Y-%m-%d" }}</time></p>
+  </li>
+{% endfor %}
+</ul>
